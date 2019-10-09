@@ -1,7 +1,7 @@
 FROM python:3.7-alpine
 
 # use custom cpplint version
-ARG CPPLINT_SOURCE=https://github.com/code-freak/cpplint/archive/master.tar.gz
+ARG CPPLINT_SOURCE=https://github.com/code-freak/cpplint/archive/2fce105d69a2a0b6d5a2dd907bdbe66a121bfee1.tar.gz
 
 COPY engine.json /engine.json
 COPY codeclimate-cpplint.py /opt/codeclimate-cpplint/bin/
